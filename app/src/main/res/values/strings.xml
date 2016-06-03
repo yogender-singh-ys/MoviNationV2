@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MovieNation</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="internet_text_1">No Internet Access</string>
+    <string name="internet_text_2">Please check your internet :-( You don\'t any favs</string>
+    <string name="internet_btn_text">Try again</string>
+    <string name="error_msg">Something went wrong !!!</string>
+    <string name="land_mode_ref_text">Click on poster for detail view. Try It !!!</string>
+    <string name="error_main_activity_text">You do not have any favourites.</string>
+    <string name="no_internet">You are  not connected to Internet</string>
+    <string name="add_to_fav">Add to favourite</string>
+    <string name="remove_to_fav">Remove from favourite</string>
+    <string name="save_fav">Remove from favourite</string>
+    <string name="remove_fave">Remove from favourite</string>
+</resources>

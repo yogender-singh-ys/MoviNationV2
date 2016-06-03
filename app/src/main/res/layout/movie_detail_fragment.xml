@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView6" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/main_title"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="#4885ed"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/colorBlack"
+                >
+
+                <ImageView
+                    android:id="@+id/image_front"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center_horizontal"
+                    >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/image_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center_horizontal"
+                     >
+                </ImageView>
+
+            </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:textSize="12dp"
+                        android:id="@+id/text_overview"
+                        android:textColor="#545454"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:textColor="#545454"
+                        android:textSize="12dp"
+                        android:id="@+id/text_release_date"
+                        android:text="Release date: 1994-09-10  "/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:textColor="#545454"
+                        android:textSize="12dp"
+                        android:id="@+id/average"
+                        android:text=""/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:textColor="#545454"
+                        android:textSize="12dp"
+                        android:id="@+id/vote_count"
+                        android:text=""/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:textColor="#545454"
+                        android:textSize="12dp"
+                        android:id="@+id/popular_vote"
+                        android:text=""/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_fav"
+                            android:text="Add to favourite"
+                            android:visibility="visible" />
+
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_get_video"
+                            android:text="Videos and Trailers"/>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_get_comments"
+                            android:text="See Comments"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

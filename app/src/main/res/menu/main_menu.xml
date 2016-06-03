@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.yogenders.test.MainActivity">
+    <item
+        android:id="@+id/menu_top_rated"
+        android:orderInCategory="100"
+        android:title="Top"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_popular"
+        android:orderInCategory="100"
+        android:title="Popular"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_fav"
+        android:orderInCategory="100"
+        android:title="Favs"
+        app:showAsAction="never" />
+</menu>
