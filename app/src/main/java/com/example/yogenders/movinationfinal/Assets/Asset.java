@@ -61,7 +61,7 @@ public class Asset {
        return BaseURL;
     }
 
-
+    // added comment
     public static void resetPaging()
     {
         TOTAL_PAGE_COUNT = 1;
