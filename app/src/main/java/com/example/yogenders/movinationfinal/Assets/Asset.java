@@ -4,7 +4,7 @@ package com.example.yogenders.movinationfinal.Assets;
 public class Asset {
 
 
-    public static final String API_KEY = "REPLACE API KEY HERE";
+    public static final String API_KEY = "a9228d58b56b46a0e9d3b8add62b6555";
 
     // URL VARS
     public static final String MOVIE_BASE_URL = "http://api.themoviedb.org/3/";
