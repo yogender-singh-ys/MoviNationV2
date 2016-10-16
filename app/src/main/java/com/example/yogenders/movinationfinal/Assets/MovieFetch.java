@@ -49,9 +49,11 @@ public class MovieFetch extends AsyncTask<String, String, String> {
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
                 StringBuilder stringBuilder = new StringBuilder();
                 String line;
+
                 while ((line = bufferedReader.readLine()) != null) {
                     stringBuilder.append(line).append("\n");
                 }
+
                 bufferedReader.close();
                 return stringBuilder.toString();
             }
@@ -62,8 +64,6 @@ public class MovieFetch extends AsyncTask<String, String, String> {
         }catch(Exception e) {
             return null;
         }
-
-
 
 
     }

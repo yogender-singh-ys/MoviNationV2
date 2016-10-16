@@ -18,5 +18,5 @@
 
     <string name="tab_1_text">Popular</string>
     <string name="tab_2_text">Top</string>
-    <string name="tab_3_text">Favs</string>
+    <string name="tab_3_text">Recent</string>
 </resources>

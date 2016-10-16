@@ -12,6 +12,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -19,6 +20,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import android.widget.TextView;
+
+import com.example.yogenders.movinationfinal.Assets.Asset;
 
 public class TabbedActivity extends AppCompatActivity {
 
@@ -113,6 +116,7 @@ public class TabbedActivity extends AppCompatActivity {
          * fragment.
          */
         private static final String ARG_SECTION_NUMBER = "section_number";
+        private static final String ARG_SECTION_URL = "section_url";
 
         public PlaceholderFragment() {
         }
@@ -122,11 +126,31 @@ public class TabbedActivity extends AppCompatActivity {
          * number.
          */
         public static PlaceholderFragment newInstance(int sectionNumber) {
+            Log.e("Error",sectionNumber+"");
             PlaceholderFragment fragment = new PlaceholderFragment();
+
+            switch (sectionNumber){
+                case 1 :
+                    Bundle args = new Bundle();
+                    args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+                    args.putString(ARG_SECTION_URL, Asset.decideAPIURL(Asset.URL_POPULAR));
+                    fragment.setArguments(args);
+                case 2 :
+                    Bundle args1 = new Bundle();
+                    args1.putInt(ARG_SECTION_NUMBER, sectionNumber);
+                    args1.putString(ARG_SECTION_URL, Asset.decideAPIURL(Asset.URL_TOP));
+                    fragment.setArguments(args1);
+
+            }
+
+
             Bundle args = new Bundle();
             args.putInt(ARG_SECTION_NUMBER, sectionNumber);
             fragment.setArguments(args);
+
             return fragment;
+
+
         }
 
         @Override
@@ -137,6 +161,8 @@ public class TabbedActivity extends AppCompatActivity {
             textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
             return rootView;
         }
+
+
     }
 
     /**
@@ -162,17 +188,5 @@ public class TabbedActivity extends AppCompatActivity {
             return 3;
         }
 
-        @Override
-        public CharSequence getPageTitle(int position) {
-            switch (position) {
-                case 0:
-                    return "SECTION 1";
-                case 1:
-                    return "SECTION 2";
-                case 2:
-                    return "SECTION 3";
-            }
-            return null;
-        }
     }
 }

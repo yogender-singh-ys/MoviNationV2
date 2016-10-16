@@ -7,11 +7,12 @@ import android.content.Intent;
 public class WebDataExtractService extends IntentService {
 
     public WebDataExtractService() {
-        super("WebDataExtractService");
+        super(WebDataExtractService.class.getName());
     }
 
     @Override
     protected void onHandleIntent(Intent intent) {
+
 
     }
 
